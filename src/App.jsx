@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { BrowserRouter,Routes,Route } from "react-router";
 import "./App.css";
 import Header from "./components/Header/Header"
@@ -15,10 +16,17 @@ import AboutUs1 from "./components/About/AboutUs1";
 import HomePage4 from "./components/Home/HomePage4";
 import AboutUs4 from "./components/About/AboutUs4";
 import HomePgae78 from "./components/Home/HomePage8/HomePgae78";
+=======
+import "./App.css";
+
+// TEMP: testing one homepage
+import HomePage1 from "./components/home-page-1/HomePage1";
+>>>>>>> 2a2fe4737b68e9e238683e7c321821895d8d991c
 
 function App() {
   return (
     <div className="app">
+<<<<<<< HEAD
       <Header/>
       <BrowserRouter>
 
@@ -28,6 +36,9 @@ function App() {
       </Routes>
           
       </BrowserRouter>
+=======
+      <HomePage1 />
+>>>>>>> 2a2fe4737b68e9e238683e7c321821895d8d991c
     </div>
   );
 }

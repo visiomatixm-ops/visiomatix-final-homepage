@@ -2,7 +2,11 @@
    Font Face: Decalotype (Local)
 ================================ */
 
+<<<<<<< HEAD
 /* @font-face {
+=======
+@font-face {
+>>>>>>> 2a2fe4737b68e9e238683e7c321821895d8d991c
   font-family: "Decalotype";
   src: url("./assets/fonts/Decalotype-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -21,6 +25,7 @@
   src: url("./assets/fonts/Decalotype-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+<<<<<<< HEAD
 } */
  
 
@@ -60,6 +65,8 @@
 @font-face {
   font-family: 'Commissioner-SemiBold';
   src: url('./assets/fonts/Commissioner-SemiBold.ttf');
+=======
+>>>>>>> 2a2fe4737b68e9e238683e7c321821895d8d991c
 }
 
 /* ===============================
@@ -88,6 +95,7 @@ body {
   background-color: #ffffff;
   color: #111111;
   line-height: 1.5;
+<<<<<<< HEAD
   background: linear-gradient(
     90deg,
     #000103,
@@ -95,6 +103,8 @@ body {
     #01112c,
     #00307c
   );
+=======
+>>>>>>> 2a2fe4737b68e9e238683e7c321821895d8d991c
 }
 
 /* Typography defaults */
@@ -117,5 +127,8 @@ img {
   max-width: 100%;
   display: block;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 2a2fe4737b68e9e238683e7c321821895d8d991c
