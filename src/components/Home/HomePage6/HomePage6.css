@@ -1,0 +1,175 @@
+/* .partners {
+  padding: 55px 90px 95px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  font-family: "Commissioner", sans-serif;
+  background: linear-gradient(
+    90deg,
+    #000103,
+    #000814,
+    #01112c,
+    #00307c
+  );
+} */
+
+.partners-home6 {
+  padding: 55px 90px 95px;
+  color: #ffffff;
+  position: relative;
+}
+
+.top-line-home6 {
+  height: 1.7px;
+  width: 100%;
+  background-color: #31ccff;
+  margin-bottom: 26px;
+  margin-top: -20px;
+}
+
+.heading-home6 {
+  text-align: right;
+  margin-bottom: 46px;
+}
+
+.heading-home6 h1 {
+  font-weight: 500;
+  font-size: 39px;
+  line-height: 1.13;
+  background: linear-gradient(90deg, #67bdff 50%, #557aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+        font-family: "Commissioner", sans-serif;
+
+}
+
+.heading-home6 p {
+  font-weight: 100;
+        font-family: "Commissioner", sans-serif;
+
+  font-size: 29px;
+  color: rgb(227, 227, 227);
+  line-height: 1.13;
+}
+
+.logo-slider-home6 {
+  width: 100vw;
+  overflow: hidden;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-bottom: 92px;
+}
+
+.logo-track-home6 {
+  display: flex;
+  gap: 26px;
+  width: max-content;
+  animation: scroll-logos 28s linear infinite;
+}
+
+.logo-slider-home6:hover .logo-track-home6 {
+  animation-play-state: paused;
+}
+
+.logo-pill-home6 {
+  background: #ffffff;
+  width: 180px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-pill-home6 img {
+  max-width: 140px;
+  max-height: 45px;
+  object-fit: contain;
+}
+
+@keyframes scroll-logos {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.cards-wrapper-home6 {
+  position: relative;
+  width:100%;
+  margin: 0 auto;
+}
+
+.arrow-bg-home6 {
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 95%;
+}
+
+.cards-row-home6 {
+  display: flex;
+  gap: 36px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.card-item-home6 {
+  position: relative;
+  flex: 1;
+  
+  isolation: isolate;
+}
+
+.card-dot-home6 {
+  width: 46px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.info-card-home6 {
+  border-radius: 23px;
+  padding: 26px 24px;    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.info-card-home6 h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 12px;
+  line-height: 1.35;
+  color: #ffffff;
+      font-family: "Commissioner", sans-serif;
+
+}
+
+.info-card-home6 p {
+      font-family: "Commissioner", sans-serif;
+font-weight:200;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #e9e9e9;
+  margin: 0;
+}
+
+
+
+@media (max-width: 900px) {
+  .cards-row-home6 {
+    flex-direction: column;
+  }
+
+  .arrow-bg-home6 {
+    display: none;
+  }
+}
+.footer-text-home6{
+  font-size:18px;
+  color: #cbd5e1;
+    font-family: "Commissioner", sans-serif;
+  font-weight: 400;
+  margin-top:30px;
+}

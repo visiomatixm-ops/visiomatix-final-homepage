@@ -1,0 +1,230 @@
+/* .homepage-4 {
+  font-family: "Decalotype", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fffafa;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    #000103,
+    #000814,
+    #01112c,
+    #00307c
+  );
+} */
+
+.homepage-4 {
+  font-family: "Decalotype", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: #d31212;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.text-reduce-top{
+margin-top:110px;
+}
+.ellipse-bg-home4 {
+  position: absolute;
+  width: 674px;
+  height: 505px;
+  left: 0;
+  transform: translateY(12%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Arrow container */
+.arrow-home4 {
+  max-width: 1329px;
+  height: 56px;
+
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Cards section */
+/* .page4-cards {
+  max-width: 1325px;
+  height: 274px;
+  margin: 0 auto 80px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+} */
+
+/* Founder / About section */
+.homepage4-about-SEO-home4 {
+  width: 100%;
+  max-width: 1325px;
+  min-height: 520px;
+  margin: 0 0 0 28px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  background-image: url("/src/assets/homepage4/Vector 3-1.png");
+  background-position: 0 100px;
+  background-repeat: no-repeat;
+}
+
+.read-more-wrapper-home4 {
+  margin-top: 24px;
+  width: 130px;
+  height: 37px;
+  padding: 1px;
+  border-radius: 50px;
+  background: linear-gradient(to right,
+      #00c8ff,
+      #023a90,
+      #00c3fb);
+}
+
+.read-more-btn-home4 {
+  width: 100%;
+  height: 100%;
+  background: #013992;
+  border: none;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-family: "Decalotype", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.read-more-icon-home4 {
+  width: 15px;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  filter: drop-shadow(10px 10px 10px rgb(233, 4, 4));
+}
+
+/* GRID CONTAINER */
+.services-grid-home4 {
+  max-width: 1440px;
+  margin: 0 auto 96px;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+/* CARD OUTER */
+.service-card-home4 {
+  max-width: 235px;
+  height: 274px;
+  margin: 0 auto;
+  padding: 2px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #4770ef, #0bb9fc);
+}
+
+/* CARD INNER */
+.service-card-inner-home4 {
+  width: 234.5px;
+  height: 273.5px;
+  border-radius: 50px;
+  background: #001634;
+  margin: auto;
+}
+
+/* ICON */
+.service-icon-home4 {
+  width: 76px;
+  height: 66px;
+}
+
+.service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding-top: 30px;
+}
+
+.service-title-home4 {
+  font-family: "Decalotype", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-top: 25px;
+}
+
+.service-desc-home4 {
+  font-family: "Decalotype", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 105%;
+  color: #d1d5db;
+}
+
+/* READ MORE BUTTON */
+.read-more-wrapper-home4 {
+  width: 128px;
+  height: 37px;
+  padding: 1px;
+  border-radius: 50px;
+  background: linear-gradient(to right,
+      #00c8ff,
+      #023a90,
+      #00c3fb);
+}
+
+.read-more-btn-home4 {
+  width: 100%;
+  height: 99%;
+  background: #013992;
+  border: none;
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.read-more-icon-home4 {
+  width: 15px;
+  transform: rotate(-45deg);
+  filter: drop-shadow(0.5px 0 white)
+        drop-shadow(0.5px 0 0 white) 
+        drop-shadow(0 0.5px 0 white) 
+        drop-shadow(0 0.5px 0 white);
+  /* filter: drop-shadow(15px 15px 6px rgba(255, 254, 254,0.9)); */
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .services-grid-home4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid-home4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

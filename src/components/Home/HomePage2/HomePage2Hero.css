@@ -1,0 +1,345 @@
+@font-face {
+  font-family: 'Decalotype';
+  src: url('../../../assets/fonts/decalotype.regular.ttf');
+}
+
+/* .hero {
+  min-height: 100vh;
+  height: auto;
+  padding: 30px 80px 80px;
+  margin-left: -50px;
+  margin-right: -50px;
+  color: white;
+  position: relative;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background: linear-gradient(
+    90deg,
+    #000103,
+    #000814,
+    #01112c,
+    #00307c
+  );
+} */
+
+.hero-home2 {
+  min-height: 100vh;
+  height: auto;
+  padding:40px 40px;
+  
+  color: white;
+  position: relative;
+}
+
+/* Chrome, Safari, Edge */
+.hero-home2::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* =========================
+   HERO TOP ROW
+   ========================= */
+.hero-top-home2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* =========================
+   LEFT CONTENT
+   ========================= */
+.hero-left-home2 {
+  width: 70%;
+  z-index: 2;
+}
+
+/* =========================
+   HERO TITLE
+   ========================= */
+.hero-title-home2 {
+  font-family: "Commissioner", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  width: 900px;
+  margin-bottom: 18px;
+  background: linear-gradient(110deg, #00f7ff, #2d57ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   DESCRIPTION
+   ========================= */
+.hero-home2 p,.welcome-home2 p {
+  font-size: 18px;
+  line-height: 1.6;
+  /* letter-spacing: 0.5px; */
+  font-family: "Commissioner", sans-serif;
+  color: #e2f0fc;
+  width: 95%;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+.hero-btn-home2 {
+  margin-top: 30px;
+  padding: 11px 24px;
+  font-size: 17px;
+  font-weight: 300;
+  color: #e2f0fc;
+  background-color: #093284;
+  border: 1px solid rgba(8, 192, 238);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Decalotype', sans-serif;
+}
+
+.hero-btn-home2:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.1);
+  transform: translateY(-3px);
+}
+
+/* =========================
+   RIGHT HERO IMAGE
+   ========================= */
+.hero-right-home2 {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* =========================
+   HERO CHARACTER (REDUCED)
+   ========================= */
+.hero-img-home2 {
+  width: 370px;
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+  transform: translateX(-20px);  /* move left by 20px */
+  animation: rocket-float 3s infinite ease-in-out;
+  
+}
+
+/* =========================
+   VECTOR BACKGROUND (REDUCED)
+   ========================= */
+.hero-vector-home2 {
+  position: absolute;
+  top: -31px;
+  right: -40px;
+  width: 380px;          /* ⬅ reduced from 450px */
+  z-index: 1;
+  opacity: 0.75;
+  
+}
+
+/* =========================
+   ROCKET
+   ========================= */
+.rocket-box-home2 {
+  position: relative;
+  width: fit-content;
+  margin-top: 55px;
+}
+
+.rocket-img-home2 {
+  position: relative;  /* add this */
+  width: 350px;
+  height: 380px;
+  animation: rocket-float 3s infinite ease-in-out;
+  z-index: 2;
+
+}
+
+
+/* VECTOR LEFT */
+.vector-left-home2 {
+  position: absolute;
+  height: 450px;
+  width: 370px;          /* ⬅ reduced */
+  margin-left: -10%;
+  margin-top: -5%;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+/* FLOAT ANIMATION */
+@keyframes rocket-float {
+  0% { transform: translateY(0) translateX(-25px);}
+  50% { transform: translateY(-10px) translateX(-25px);}
+  100% { transform: translateY(0) translateX(-25px);}
+}
+
+.welcome-home2 {
+  position: absolute;
+  right: 100px;          /* move closer to right edge */
+  top: 67%;
+  transform: translateY(-50%);
+  width: 870px;          /* expanded from 680px */
+  max-width: 100%;        /* ensures it doesn't overflow on smaller screens */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  z-index: 3;
+}
+
+.welcome-home2 h2 {
+  font-size: 45px;
+  margin-bottom: 14px;
+  margin-left: -9%;
+  font-weight: 545;
+  font-family: "Commissioner", sans-serif;
+  background: linear-gradient(50deg, #00f7ff, #2d57ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .hero-home2 {
+    padding: 30px 40px 60px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-top-home2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-left-home2 {
+    width: 100%;
+  }
+
+  .hero-title-home2 {
+    width: 100%;
+    font-size: 38px;
+  }
+
+  .hero-home2 p,
+  .welcome-home2 p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .hero-btn-home2 {
+    margin-top: 25px;
+  }
+
+  .hero-right-home2 {
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .hero-img-home2 {
+    width: 300px;
+    transform: none;
+  }
+
+  .hero-vector-home2 {
+    width: 300px;
+    right: 0;
+  }
+
+  .rocket-box-home2 {
+    margin-top: 40px;
+  }
+
+  .rocket-img-home2 {
+    width: 260px;
+    height: auto;
+  }
+
+  .vector-left-home2 {
+    width: 280px;
+    height: auto;
+    margin-left: -5%;
+  }
+
+  /* IMPORTANT: reset welcome positioning */
+  .welcome-home2 {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    width: 100%;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .welcome-home2 h2 {
+    font-size: 36px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+
+  .hero-home2 {
+    padding: 20px 20px 50px;
+  }
+
+  .hero-title-home2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .hero-home2 p,
+  .welcome-home2 p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .hero-btn-home2 {
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 12px;
+  }
+
+  .hero-right-home2 {
+    margin-top: 30px;
+  }
+
+  .hero-img-home2 {
+    width: 240px;
+  }
+
+  .hero-vector-home2 {
+    width: 240px;
+    opacity: 0.5;
+  }
+
+  .rocket-img-home2 {
+    width: 220px;
+  }
+
+  .vector-left-home2 {
+    width: 220px;
+    opacity: 0.6;
+  }
+
+  .welcome-home2 {
+    margin-top: 40px;
+  }
+
+  .welcome-home2 h2 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,383 @@
+  /* html,
+body {
+  overflow-x: hidden;
+}
+
+  .why-section {
+    color: #ffffff;
+    padding: 60px 80px 80px;
+    font-family: "Decolotype", sans-serif;
+    background: linear-gradient(
+    90deg,
+    #000103,
+    #000814,
+    #01112c,
+    #00307c
+  );
+  } */
+
+  /* ================= TOP BADGE ================= */
+
+  .why-section-home3 {
+    color: #ffffff;
+    padding: 0px 100px 80px;
+    font-family: "Decolotype", sans-serif;
+  }
+  
+  .top-badge-home3 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .top-badge-home3 .years-home3 {
+   font-family: "Tourney", sans-serif;
+  font-weight: 400;
+  font-size: 99px;
+  line-height: 160%;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  }
+  .why-text-left-container-home3{
+    width:80%;
+  }
+
+  .top-badge-home3 p {
+    font-family: "Commissioner", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  color:#f7f8f8;
+  line-height: 113%;
+  letter-spacing: 0;
+
+  margin: 0;
+  }
+
+  .top-badge-home3 a {
+    color: #4fd1ff;
+    line-height: 1.5;
+    text-decoration: underline;
+  }
+
+  .experience-text-home3 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  /* ================= MAIN GRID ================= */
+  .why-main-home3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* CONTENT */
+  .why-content-home3 {
+    width: 100%;
+  }
+
+  .why-text-main-top-container-home3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; /* controls space between text & image */
+    width: 100%;
+  }
+
+  .why-content-home3 h1 {
+   font-family: "Commissioner", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 113%;
+  letter-spacing: 0;
+
+  background: linear-gradient(90deg, #02c6ff 0%, #4b6def 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  margin-bottom: 16px;
+  display: block;
+
+  }
+
+  .why-content-home3 p {
+    font-family: "Commissioner", sans-serif;
+  font-weight: 100; /* Regular */
+  font-size: 18px;
+  line-height: 113%; 
+  letter-spacing: 0;
+
+  color: #f7f8f8;
+  max-width: 100%;
+  }
+  .why-choose-big-text-home3 {
+     font-family: "Commissioner", sans-serif;
+  font-weight: 300; /* Regular */
+
+  line-height: 113%;
+  letter-spacing: 0;
+  font-size:20px;
+  color: #ffffff;
+
+  width:98%;
+  margin-left: 2px;
+  align-self: flex-start;
+  }
+
+  .why-image-home3 {
+    display: flex;
+    align-items: center;
+    margin-left: 19px;
+  }
+
+  .why-image-home3 img {
+    border-radius: 18px;
+    height: 320px;
+    width: 490px;
+  }
+
+  .pill-column-home3 {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-pill-home3 {
+    transform: rotate(-90deg);
+    background-color: transparent;
+    padding: 10px 22px;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 13px;
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  }
+
+ .stats-wrapper-home3 {
+  margin-top: 24px;      /* was 35px */
+  margin-bottom: 0;
+  padding-bottom: 0;     /* 🔥 REMOVE */
+  width: 100%;
+}
+
+
+.stats-row-home3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 🔥 PERFECT 5 EQUAL COLUMNS */
+  align-items: center;
+  column-gap: 40px; /* even spacing */
+}
+
+.stat-box-home3 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.stats-text-container-home3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+   line-height: 1;
+}
+
+
+  .stat-box-home3 h1 {
+    font-size: 39px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #02c6ff 0%, #4b6def 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+margin: 0;
+    color: transparent;
+    display: inline;
+  }
+
+  .stat-box-home3 span {
+    font-family: "Commissioner", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 113%;
+    letter-spacing: 0;
+
+    color: rgba(225, 222, 222, 0.75); 
+    text-align: start;
+    margin-left: 10px;
+    max-width: 90%;
+  }
+
+ .divider-home3 {
+  height: 1.6px;
+  background-color: #31ccff;
+  margin: 16px 0; 
+}
+
+ .brands-wrapper-home3 {
+    margin-bottom: 60px;
+  }
+
+  .brands-wrapper-home3 p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #d1d5db;
+    max-width: 90%;
+  }
+
+  .trusted-text-home3 {
+  margin-top: 0;    
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+  .brands-row-home3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .brand-card-home3 {
+    background: #ffffff;
+    color: #020b18;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .services-section-home3 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .services-section-home3 h2 {
+    font-size: 40px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #0bbbfd 0%, #4771f0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: block;
+    text-align: right;
+    margin-bottom: 12px;
+  }
+
+  .services-section-home3 p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #d1d5db;
+    max-width: 100%;
+    margin-left: auto;
+  }
+
+  @media (max-width: 900px) {
+    .why-section-home3 {
+      padding: 40px 20px;
+    }
+
+    .why-main-home3 {
+      grid-template-columns: 1fr;
+    }
+
+    .pill-column-home3 {
+      display: none;
+    }
+
+    .stats-row-home3 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+
+  .integrated-digital-title-home3 {
+    font-family: "Decolotype", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 113%;
+    letter-spacing: 0;
+    margin-top:85px;
+    text-align: right;
+
+    background: linear-gradient(90deg, #0bbbfd 0%, #4771f0 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    margin-bottom: 12px;
+  }
+
+  .integrated-digital-desc-home3 {
+    font-family: "Commissioner", sans-serif;
+  font-weight: 300; /* Regular */
+
+  line-height: 113%;
+  letter-spacing: 0;
+  font-size:20px;
+  color: #ffffff;
+  text-align: right;
+
+  width:98%;
+  margin-left: 2px;
+  align-self: flex-start;
+  }
+
+.brands-wrapper-home3 {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.brands-marquee-home3 {
+  display: flex;
+  width: max-content;
+  animation: marquee 50s linear infinite;
+}
+
+.brand-card-home3 {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+   margin-right:13px;
+  margin-left:13px;
+}
+
+.brand-card-home3 img {
+  max-width: 220px;
+  max-height: 120px;
+ 
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+ 

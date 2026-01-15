@@ -1,0 +1,97 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
+
+
+
+.global-stage {
+  width: 100%;
+  min-height: 100vh; /* safer than height */
+  background-image:
+    url("../../../assets/images/Ellipse 6.png"),
+    linear-gradient(
+      90deg,
+      #000103,
+      #000814,
+      #01112c,
+      #00307c
+    );
+
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    left 0 top 0,
+    center;
+  background-size:
+    clamp(200px, 30vw, 400px),
+    cover;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  padding-top: clamp(60px, 10vh, 100px);
+}
+.global-text {
+  position: absolute;
+  top: clamp(16px, 5vw, 40px);
+  left: clamp(16px, 5vw, 40px);
+  z-index: 10;
+  max-width: min(90%, 420px);
+}
+.subtitle {
+  font-family: 'Commissioner-Regular';
+  font-size: clamp(12px, 2.5vw, 20px);
+  color: #00aeef;
+  margin-bottom: 6px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.title {
+  font-family: 'Commissioner-Medium';
+  font-size: clamp(24px, 5vw, 48px);
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 130%;
+}
+.global-map {
+  margin-top: clamp(40px, 8vh, 120px);
+  width: min(90%, 1600px);
+  height: auto;
+  opacity: 0.9;
+  filter: brightness(1.1);
+  user-select: none;
+  pointer-events: none;
+
+  transform: perspective(1000px) rotateX(2deg);
+}
+@media (max-width: 768px) {
+  .global-stage {
+    padding-top: 60px;
+  }
+
+  .global-map {
+    width: 100%;
+    transform: none; /* remove 3D on mobile */
+    margin-top: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .global-text {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .global-stage {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@supports (-webkit-touch-callout: none) {
+  .global-stage {
+    min-height: -webkit-fill-available;
+  }
+}

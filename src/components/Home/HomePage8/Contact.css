@@ -1,0 +1,330 @@
+:root {
+  --line-blue: #38bdf8;
+}
+
+/* ================= CONTACT SECTION ================= */
+
+.contact {
+  padding: clamp(40px, 6vw, 60px)
+           clamp(20px, 6vw, 90px)
+           clamp(40px, 8vw, 90px)
+           clamp(20px, 5vw, 50px);
+
+  color: #ffffff;
+  font-family: "Inter", system-ui, sans-serif;
+  position: relative;
+
+  background: linear-gradient(
+    90deg,
+    #000103,
+    #000814,
+    #01112c,
+    #00307c
+  );
+
+  overflow: hidden;
+}
+
+/* ================= BACKGROUND ELLIPSES ================= */
+
+.ellipse,
+.ellipse1 {
+  position: absolute;
+  left: 0;
+  width: clamp(180px, 25vw, 300px);
+  opacity: 0.7;
+}
+
+.ellipse {
+  top: clamp(180px, 30vw, 249px);
+}
+
+.ellipse1 {
+  top: clamp(420px, 60vw, 613px);
+  height: auto;
+}
+
+/* ================= CONTAINER ================= */
+
+.contact-container {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  gap: clamp(40px, 6vw, 72px);
+  align-items: flex-start;
+}
+
+/* ================= LEFT CONTACT CARD ================= */
+
+.contact-left {
+  width: 320px;
+  min-height: 480px;
+
+  padding: clamp(40px, 6vw, 70px)
+           clamp(24px, 4vw, 50px)
+           22px
+           22px;
+
+  margin-top: 30px;
+
+  border-radius: 18px;
+  border: 1.5px solid var(--line-blue);
+
+  display: flex;
+  flex-direction: column;
+  background: none;
+}
+
+/* LEFT CONTENT */
+.left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.left-content h4 {
+  font-size: clamp(16px, 2.5vw, 20px);
+  font-family: 'Commissioner-SemiBold';
+}
+
+.left-content p {
+  font-size: clamp(13px, 2.5vw, 15px);
+  line-height: 150%;
+  font-family: 'Commissioner-Light';
+}
+
+/* HEADER */
+.contact-head {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1.5px solid var(--line-blue);
+  font-family: "Commissioner", sans-serif;
+}
+
+/* BUTTON */
+.talk {
+  margin-top: 10px;
+  width: 100%;
+  height: 56px;
+
+  font-size: clamp(16px, 3vw, 20px);
+  font-family: 'Commissioner-SemiBold';
+  font-weight: 600;
+
+  color: #ffffff;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00c8ff, #0e5dda);
+  border: none;
+  cursor: pointer;
+}
+
+/* DIVIDER */
+.line {
+  height: 1.5px;
+  background: var(--line-blue);
+  margin: 0 0 20px;
+}
+
+/* ================= SOCIAL ICONS ================= */
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.socials a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials img {
+  height: 24px;
+}
+
+/* ================= RIGHT FORM ================= */
+
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITLES */
+.small-title {
+  font-size: clamp(14px, 3vw, 20px);
+  color: #7dd3fc;
+  font-family: 'Commissioner-SemiBold';
+  margin-bottom: 6px;
+}
+
+.contact-right h2 {
+  font-size: clamp(24px, 5vw, 40px);
+  font-family: 'Commissioner-Medium';
+  margin-bottom: 26px;
+}
+
+.contact-right span {
+  font-family: 'Commissioner-Regular';
+  font-weight: 400;
+}
+
+/* ================= FORM GRID ================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 22px;
+}
+
+/* INPUTS */
+.contact input,
+.contact select,
+.contact textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1.5px solid var(--line-blue);
+  background: none;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder,
+.contact select {
+  color: #ffffff;
+  font-family: 'Commissioner-ExtraLight';
+  font-size: 15px;
+}
+
+/* SELECT & TEXTAREA */
+.contact select,
+.contact textarea {
+  margin-top: 18px;
+}
+
+.contact textarea {
+  height: 160px;
+  resize: none;
+}
+
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= CAPTCHA ================= */
+
+.recaptcha {
+  margin-top: 16px;
+  width: 260px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+  align-self: flex-start;
+}
+
+.recaptcha-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.recaptcha-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #c1c1c1;
+  border-radius: 2px;
+  background: #ffffff;
+}
+
+.recaptcha-text {
+  font-size: 14px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.recaptcha-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.recaptcha-logo {
+  width: 32px;
+  height: 32px;
+  background: url("/icons/recaptcha.png") no-repeat center;
+  background-size: contain;
+}
+
+.recaptcha-footer {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.recaptcha-footer span {
+  font-size: 10px;
+  color: #555;
+}
+
+.recaptcha-footer small {
+  font-size: 9px;
+  color: #777;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 40px 16px 50px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-right h2,
+  .small-title {
+    text-align: center;
+  }
+
+  .recaptcha {
+    transform: scale(0.9);
+    transform-origin: left;
+  }
+}
+
+
